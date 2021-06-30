@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link href="calc.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <form>
+            <table>
+                <tr>
+                    <th colspan="4"><div id="display"></div></th>
+                </tr>
+                <tr>
+                    <th colspan="4"><input type="number/text" id="field"></th>
+                </tr>
+                <tr>
+                    <th><input type="button" class="nrmlbtn" onclick="history('prev')" value="prev"></th>
+                    <th><input type="button" class="nrmlbtn" onclick="history('next')" value="Next"></th>
+                    <th><input type="button" class="nrmlbtn" onclick="erase()" value="AC"></th>
+                    <th><input type="button" class="nrmlbtn" id="enter" onclick="myFuncArray('eva')" value="enter"></th>
+                </tr>
+                <tr>
+                    <th><input type="button" class="nrmlbtn" onclick="myValue(7)" id="7" value="7"></th>
+                    <th><input type="button" class="nrmlbtn" onclick="myValue(8)" id="8" value="8"></th>
+                    <th><input type="button" class="nrmlbtn" onclick="myValue(9)" id="9" value="9"></th>
+                    <th><input type="button" class="nrmlbtn" onclick="valueDel()" id="del" value="del"></th>
+                </tr>
+                <tr>
+                    <th><input type="button" class="nrmlbtn" onclick="myValue(4)" id="4" value="4"></th>
+                    <th><input type="button" class="nrmlbtn" onclick="myValue(5)" id="5" value="5"></th>
+                    <th><input type="button" class="nrmlbtn" onclick="myValue(6)" id="6" value="6"></th>
+                    <th><input type="button" class="nrmlbtn" onclick="myFuncArray('multi')" id="*" value="*"></th>
+                </tr>
+                <tr>
+                    <th><input type="button" class="nrmlbtn" onclick="myValue(1)" id="1" value="1"></th>
+                    <th><input type="button" class="nrmlbtn" onclick="myValue(2)" id="2" value="2"></th>
+                    <th><input type="button" class="nrmlbtn" onclick="myValue(3)" id="3" value="3"></th>
+                    <th><input type="button" class="nrmlbtn" onclick="myFuncArray('divide')" id="/" value="/"></th>
+                </tr>
+                <tr>
+                    <th><input type="button" class="nrmlbtn" onclick="myValue('.')" id="." value="."></th>
+                    <th><input type="button" class="nrmlbtn" onclick="myValue(0)" id="0" value="0"></th>
+                    <th><input type="button" class="nrmlbtn" onclick="myFuncArray('add')" id="+" value="+"></th>
+                    <th><input type="button" class="nrmlbtn" onclick="myFuncArray('sub')" id="-" value="-"></th>
+                </tr>
+            </table>
+            <div id = "pastresult"></div>
+            
+        </form>
+
+
+        <script type="text/javascript" src="calc.js"></script>
+    </body>
+</html>
