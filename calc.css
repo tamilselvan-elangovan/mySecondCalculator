@@ -2,52 +2,71 @@
     box-sizing: border-box;
 }
 
-table {
+table {  
     border: 1px solid black;
-    border-collapse: collapse;
-    
+    border-radius: 5px;
 }
 
-table, th {
-    border: 1px solid black;
-    height: 35px;
-    width: 35px;
+table.center {
+    max-width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 table input {
     height: 35px;
     width: 153px;
     padding: 0px;
+    border: 1px solid black;
+    border-radius: 2.5px;
+}
+
+table th {
+    padding: 0px;
 }
 
 .nrmlbtn {
     height: 35px;
     width: 36px;
-    padding: 0px;
+    padding: 0px;    
+}
+
+#field, #display {
+    height: 12px;
+    padding : 0px;
+    margin : 0px;
+    max-width: 149px;
+    font-weight: 400;
+    font-size: 10px;
+    font-family: Arial;
+    overflow-x: auto;
+    overflow-y: hidden;
+    justify-content: flex-end;
+    white-space: nowrap;
+    margin-left: 1px;
+    text-align: right;
+}
+
+#field::-webkit-scrollbar {
+    display:none;
+}
+
+#display::-webkit-scrollbar {
+    display:none;
 }
 
 #field {
-    border : none;
-    padding : 0px;
-    margin : 0px;
-    text-align: right;
+    font-size: 23px;
+    height: 28px;
 }
 
-#display {
-    border : none;
-    padding : 0px;
-    margin : 0px;
-    text-align: right;
-    font-weight: 400;
-    font-size: 13.3333px;
-    font-family: Arial;
-}
 
 #pastresult {
     border : none;
     padding : 0px;
     margin : 0px;
-    text-align: left;
+    text-align: center;
+    justify-content: flex-end;
     font-weight: 400;
     font-size: 13.3333px;
     font-family: Arial;
